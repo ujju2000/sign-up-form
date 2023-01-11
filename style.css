@@ -13,13 +13,13 @@ body {
     width : 100vw;
     display : flex;
     
-    background-color: rgb(206, 203, 203);
+    background-color: rgba(239, 239, 239, 0.943);
 }
 .left-side{
     position : relative;
-   height : 100%;
-   width : auto;
-   flex-basis: 40%;
+    height : 100vh;
+    width : 60%;
+    flex-basis: 40%;
     background-image: url(./background.jpg);
     background-position: left;
     background-repeat: repeat;
@@ -30,8 +30,9 @@ body {
 }
 .right-side{
     height: 100%;
-    width : inherit;
-    
+    width : 70%;
+    display : flex;
+    flex-direction: column;
 }
 
 /* logo */
@@ -65,13 +66,81 @@ body {
 
 
 .para {
-
+    font-size : 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 6rem;
 }
 
 .structure {
+    height : 40%;
+    width : 100vw;
     background-color: white;
+    padding : 40px;
+}
+.structure h3 {
+    font-size : 30px;
+
 }
 .form {
     display : flex;
+    flex-direction: column;
+}
+.form div {
+    display : flex;
+
+}
+.form input {
+    width : 200px;
+    margin : 0px 10px;
+    outline : none;
+    border : 1px solid black;
+    height : 30px;
     
+}
+.input {
+    margin-top: 10px;
+}
+.input div {
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.input h3 {
+    font-size : 13px;
+    letter-spacing: .1rem;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+
+
+/* create account btn  */
+
+.btn {
+    height : 40px;
+    margin : 20px; 
+    width : 200px;
+    background-color: #596D48;
+    color : white;  
+    border-radius: 5%;
+    outline : none; 
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    cursor : pointer;
+    border : none;
+}
+
+.log-in {
+    margin : 20px;
+    font-weight: 300;
+
+}
+.log-in a{
+    color : #596D48;
 }
